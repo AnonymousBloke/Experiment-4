@@ -1,0 +1,207 @@
+#include <iostream> // Created With Dev C++
+
+using namespace std;
+
+int addition (int a, int b)
+{
+int r;
+r=a+b;
+return r;
+}
+
+int subtraction (int a, int b)
+{
+int r;
+r=a-b;
+return r;
+}
+
+int multiplication (int a, int b)
+{
+int r;
+r=a*b;
+return r;
+}
+
+double division (double a, double b)
+{
+double r;
+r=a/b;
+return r;
+}
+
+int modulo (int a, int b)
+{
+int r, c;
+r=a/b;
+c = a - (b * r);
+return c;
+}
+
+int main ()
+{
+int a, b, opera;
+double c;
+char choice;
+
+cout << "MENU" << endl;
+cout << "	1. ADD" << endl;
+cout << "	2. SUBTRACT" << endl;
+cout << "	3. MULTIPLY" << endl;
+cout << "	4. DIVIDE" << endl;
+cout << "	5. MODULOS" << endl;
+cout << "Enter Desired Operation (1 - 5): "; cin >> opera;
+cout << endl;
+
+switch (opera)
+{
+case 1:	
+
+cout << "Enter Two Integers" << endl;
+cout << "	First Integer: "; cin >> a;
+cout << "	Second Integer: "; cin >> b;
+cout << endl;
+c = addition (a, b);
+cout << "The Sum Is: " << c;
+cout << endl;
+break;
+case 2:
+
+cout << "Enter Two Integers" << endl;
+cout << "	First Integer: "; cin >> a;
+cout << "	Second Integer: "; cin >> b;
+cout << endl;
+c = subtraction (a, b);
+cout << "The Difference Is: " << c;
+cout << endl;
+break;
+
+case 3:
+
+cout << "Enter Two Integers" << endl;
+cout << "	First Integer: "; cin >> a;
+cout << "	Second Integer: "; cin >> b;
+cout << endl;
+c = multiplication (a, b);
+cout << "The Product Is: " << c;
+cout << endl;
+break;
+
+case 4:
+
+cout << "Enter Two Integers" << endl;
+cout << "	First Integer: "; cin >> a;
+cout << "	Second Integer: "; cin >> b;
+cout << endl;
+c = division (a, b);
+cout << "The Quotient Is: " << c;
+cout << endl;
+break;
+
+case 5:
+
+cout << "Enter Two Integers" << endl;
+cout << "	First Integer: "; cin >> a;
+cout << "	Second Integer: "; cin >> b;
+cout << endl;
+c = modulo (a, b);
+cout << "The Modulo Is: " << c;
+cout << endl;
+break;
+
+default:
+cout << "Invalid!" << endl;
+
+}
+
+choice = 'y';
+
+while (choice == 'y')
+{
+
+cout << "Continue? (y/n): "; cin >> choice;
+
+switch (choice)
+{	
+case 'y':
+cout << "MENU" << endl;
+cout << "	1. ADD" << endl;
+cout << "	2. SUBTRACT" << endl;
+cout << "	3. MULTIPLY" << endl;
+cout << "	4. DIVIDE" << endl;
+cout << "	5. MODULOS" << endl;
+cout << "Enter Desired Operation (1 - 5): "; cin >> opera;
+cout << endl;
+
+switch (opera)
+{
+case 1:	
+
+cout << "Enter Two Integers" << endl;
+cout << "	First Integer: "; cin >> a;
+cout << "	Second Integer: "; cin >> b;
+cout << endl;
+c = addition (a, b);
+cout << "The Sum Is: " << c;
+cout << endl;
+break;
+case 2:
+
+cout << "Enter Two Integers" << endl;
+cout << "	First Integer: "; cin >> a;
+cout << "	Second Integer: "; cin >> b;
+cout << endl;
+c = subtraction (a, b);
+cout << "The Difference Is: " << c;
+cout << endl;
+break;
+
+case 3:
+
+cout << "Enter Two Integers" << endl;
+cout << "	First Integer: "; cin >> a;
+cout << "	Second Integer: "; cin >> b;
+cout << endl;
+c = multiplication (a, b);
+cout << "The Product Is: " << c;
+cout << endl;
+break;
+
+case 4:
+
+cout << "Enter Two Integers" << endl;
+cout << "	First Integer: "; cin >> a;
+cout << "	Second Integer: "; cin >> b;
+cout << endl;
+c = division (a, b);
+cout << "The Quotient Is: " << c;
+cout << endl;
+break;
+
+case 5:
+
+cout << "Enter Two Integers" << endl;
+cout << "	First Integer: "; cin >> a;
+cout << "	Second Integer: "; cin >> b;
+cout << endl;
+c = modulo (a, b);
+cout << "The Modulo Is: " << c;
+cout << endl;
+break;
+
+default:
+cout << "Invalid!" << endl;
+}
+break;
+
+case 'n':
+cout << "Thank You!" << endl;
+break;
+
+default:
+cout << "Invalid!" << endl;
+
+}
+}
+    return 0;
+}
